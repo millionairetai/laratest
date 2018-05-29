@@ -13,7 +13,18 @@ class DeployTest extends TestCase
      */
     public function testcheckDeploy()
     {
-        $flag = false;
+        $flag = true;
+        $this->assertTrue($flag);
+    }
+
+    /**
+     * A check test example.
+     *
+     * @return void
+     */
+    public function testcheck1Deploy()
+    {
+        $flag = true;
         $this->assertTrue($flag);
     }
 }
