@@ -13,7 +13,7 @@ class DeployTest extends TestCase
      */
     public function testcheckDeploy()
     {
-        $flag = 2111122221;
+        $flag = 33333;
         $this->assertTrue($flag);
     }
 
