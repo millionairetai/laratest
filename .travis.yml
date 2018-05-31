@@ -11,6 +11,10 @@ before_script:
 script:
 - vendor/bin/phpunit
 after_success:
-- misc/auto-deploy.sh
+- touch test_after_success.txt
+- ll
+- git add .
+- git commit -am "Make source code standard and generate documentation"
+- git push origin HEAD:$TRAVIS_BRANCH
 notifications:
     slack: iofficez1:tnwGrbQkTr635Z5fsdjvYKe8
