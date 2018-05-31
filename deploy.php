@@ -5,10 +5,10 @@
 
 $TITLE   = 'Git Deployment Hamster';
 $VERSION = '0.11';
-$TOKEN_DEPLOY_DEV = '4WOEI329923230KSDDKWDIOWEIOOWEDSDK';
+$TOKEN_DEPLOY_DEV = '4WOEI329923230KSDDKWDIOWEIOOWEDSDK  22';
 echo $_GET['token'];
 if ($_GET['token'] !== $TOKEN_DEPLOY_DEV) {
-    echo 'Invalid deploy token';
+    die('Invalid deploy token');
 }
 
 echo <<<EOT
