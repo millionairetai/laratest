@@ -17,4 +17,4 @@
 # Force migration - Must be changed for production
 # Force operation can make data lost
 
-usermod -d /var/lib/mysql/ mysql && service mysql start && mysql -u root --password=1234 && mysql -e "CREATE USER 'dev_local'@'%' IDENTIFIED BY ' ';" && mysql -e "grant all privileges on *.* to 'dev_local'@'%' with grant option;" && mysql -e 'FLUSH PRIVILEGES;'
+#usermod -d /var/lib/mysql/ mysql && service mysql start && mysql -u root --password=1234 && mysql -e "CREATE USER 'dev_local'@'%' IDENTIFIED BY ' ';" && mysql -e "grant all privileges on *.* to 'dev_local'@'%' with grant option;" && mysql -e 'FLUSH PRIVILEGES;'
