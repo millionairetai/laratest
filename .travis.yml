@@ -11,6 +11,6 @@ before_script:
 script:
 - vendor/bin/phpunit
 after_success:
-- curl -s https://iofficez.com/laratest/deploy.php
+- misc/auto-deploy.sh
 notifications:
     slack: iofficez1:tnwGrbQkTr635Z5fsdjvYKe8

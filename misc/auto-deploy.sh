@@ -16,8 +16,9 @@
 
 # Force migration - Must be changed for production
 # Force operation can make data lost
-cd ..
 
-git pull
-git status
-git branch
+if [[ "$TRAVIS_BRANCH" == "develop" ]]
+then
+    curl -s https://iofficez.com/laratest/deploy.php
+fi
+
