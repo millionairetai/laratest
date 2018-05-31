@@ -9,7 +9,7 @@ env:
 before_script:
 - composer install --no-interaction
 - docker build -t webdev .
-- docker run -ti webdev
+- docker run -ti webdev &
 - docker ps -a
 script:
 - vendor/bin/phpunit
