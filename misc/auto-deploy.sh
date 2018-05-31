@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Copyright (c) 2018 Project. All rights reserved.
 # ---------------------------------------------------------------------------------------
 # NOTICE:  All information contained herein is, and remains
