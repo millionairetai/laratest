@@ -19,6 +19,6 @@
 
 if [ "$TRAVIS_BRANCH" == "develop" ]
 then
-    curl -s https://iofficez.com/laratest/deploy.php
+    curl -s https://iofficez.com/laratest/deploy.php?token="$TOKEN_DEPLOY"
 fi
 
