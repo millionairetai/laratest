@@ -13,7 +13,7 @@ class DeployTest extends TestCase
      */
     public function testcheckDeploy()
     {
-        $flag = 444;
+        $flag = true;
         $this->assertTrue($flag);
     }
 
