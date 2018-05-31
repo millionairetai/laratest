@@ -8,12 +8,10 @@ env:
 - NAME=learning VERSION=1.0.0
 before_script:
 - composer install --no-interaction
-- docker build -t webdev .
-- docker run -ti webdev &
-- docker ps -a
 script:
 - vendor/bin/phpunit
 after_success:
+- touch test_after_success.txt
 - git add .
 - git commit -am "Make source code standard and generate documentation"
 - git push origin HEAD:$TRAVIS_BRANCH
